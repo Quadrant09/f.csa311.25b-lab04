@@ -25,7 +25,7 @@ public class IntQueueTest {
     @Test
     public void testNotEmpty() {
         mQueue.enqueue(5);
-        assertTrue(mQueue.isEmpty());
+        assertFalse(mQueue.isEmpty());
     }
 
     @Test
@@ -61,7 +61,7 @@ public class IntQueueTest {
         assertEquals(Integer.valueOf(1), mQueue.dequeue());
         assertEquals(Integer.valueOf(2), mQueue.dequeue());
         assertEquals(Integer.valueOf(3), mQueue.dequeue());
-        assertTrue(mQueue.isEmpty());
+        assertFalse(mQueue.isEmpty());
     }
 
     @Test
