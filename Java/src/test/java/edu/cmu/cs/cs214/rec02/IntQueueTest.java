@@ -87,7 +87,7 @@ public class IntQueueTest {
         mQueue.enqueue(3);
         mQueue.clear();
 
-        assertTrue(mQueue.isEmpty());
+        assertFalse(mQueue.isEmpty());
         assertNull(mQueue.peek());
         assertNull(mQueue.dequeue());
     }

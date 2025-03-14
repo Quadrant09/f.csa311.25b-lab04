@@ -51,15 +51,18 @@ public class ArrayIntQueue implements IntQueue {
         size++;
         return true;
     }
-
+//------------------
     public boolean isEmpty() {
+        //size >= 0
         return size == 0;
     }
-
+//------------------
     public Integer peek() {
+        //
         if (isEmpty()) {
             return null;
         }
+        //
         return elementData[head];
     }
 
